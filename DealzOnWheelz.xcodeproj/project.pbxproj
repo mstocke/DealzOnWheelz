@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94673E4E1CFF21A000BB94DE /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94673E4D1CFF21A000BB94DE /* RootTableViewController.m */; };
 		D40584961CFF1A0500B2151D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584951CFF1A0500B2151D /* main.m */; };
 		D40584991CFF1A0500B2151D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584981CFF1A0500B2151D /* AppDelegate.m */; };
 		D405849C1CFF1A0500B2151D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D405849B1CFF1A0500B2151D /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94673E4C1CFF21A000BB94DE /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		94673E4D1CFF21A000BB94DE /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		D40584911CFF1A0500B2151D /* DealzOnWheelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealzOnWheelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40584951CFF1A0500B2151D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D40584971CFF1A0500B2151D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 				D40584971CFF1A0500B2151D /* AppDelegate.h */,
 				D40584981CFF1A0500B2151D /* AppDelegate.m */,
 				D405849A1CFF1A0500B2151D /* ViewController.h */,
+				94673E4C1CFF21A000BB94DE /* RootTableViewController.h */,
+				94673E4D1CFF21A000BB94DE /* RootTableViewController.m */,
 				D405849B1CFF1A0500B2151D /* ViewController.m */,
 				D405849D1CFF1A0500B2151D /* Main.storyboard */,
 				D40584A01CFF1A0500B2151D /* Assets.xcassets */,
@@ -152,6 +157,7 @@
 				D405849C1CFF1A0500B2151D /* ViewController.m in Sources */,
 				D40584991CFF1A0500B2151D /* AppDelegate.m in Sources */,
 				D40584961CFF1A0500B2151D /* main.m in Sources */,
+				94673E4E1CFF21A000BB94DE /* RootTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				D40584AA1CFF1A0600B2151D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
