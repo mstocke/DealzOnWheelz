@@ -12,12 +12,16 @@
 
 @interface RootTableViewController ()
 
+@property (strong, nonatomic) NSArray *months;
+
 @end
 
 @implementation RootTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _months = @[@"June", @"July", @"August"];
     
     Deal *newDeal = [[Deal alloc]initWithDealName:@"Poopy Cash" andDescription:@"$1,000,000"];
     NSLog(@"Deal name = %@, Deal description = %@", newDeal.dealName, newDeal.dealDescription);
@@ -37,24 +41,19 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [_months count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text = [_months objectAtIndex:indexPath.row];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
