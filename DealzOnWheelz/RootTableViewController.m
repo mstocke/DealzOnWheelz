@@ -7,6 +7,8 @@
 //
 
 #import "RootTableViewController.h"
+#import "Vehicle.h"
+#import "Deal.h"
 
 @interface RootTableViewController ()
 
@@ -16,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Deal *newDeal = [[Deal alloc]initWithDealName:@"Poopy Cash" andDescription:@"$1,000,000"];
+    NSLog(@"Deal name = %@, Deal description = %@", newDeal.dealName, newDeal.dealDescription);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

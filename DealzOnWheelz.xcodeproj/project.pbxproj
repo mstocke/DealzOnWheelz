@@ -14,6 +14,9 @@
 		D405849F1CFF1A0500B2151D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D405849D1CFF1A0500B2151D /* Main.storyboard */; };
 		D40584A11CFF1A0500B2151D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40584A01CFF1A0500B2151D /* Assets.xcassets */; };
 		D40584A41CFF1A0600B2151D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40584A21CFF1A0600B2151D /* LaunchScreen.storyboard */; };
+		D40584AD1CFF26FB00B2151D /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584AC1CFF26FB00B2151D /* Vehicle.m */; };
+		D40584B01CFF273200B2151D /* Deal.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584AF1CFF273200B2151D /* Deal.m */; };
+		D40584B31CFF29F600B2151D /* Month.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584B21CFF29F600B2151D /* Month.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		D40584A01CFF1A0500B2151D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40584A31CFF1A0600B2151D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D40584A51CFF1A0600B2151D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40584AB1CFF26FB00B2151D /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		D40584AC1CFF26FB00B2151D /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		D40584AE1CFF273200B2151D /* Deal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deal.h; sourceTree = "<group>"; };
+		D40584AF1CFF273200B2151D /* Deal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deal.m; sourceTree = "<group>"; };
+		D40584B11CFF29F600B2151D /* Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Month.h; sourceTree = "<group>"; };
+		D40584B21CFF29F600B2151D /* Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Month.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,12 @@
 		D40584931CFF1A0500B2151D /* DealzOnWheelz */ = {
 			isa = PBXGroup;
 			children = (
+				D40584AE1CFF273200B2151D /* Deal.h */,
+				D40584B11CFF29F600B2151D /* Month.h */,
+				D40584B21CFF29F600B2151D /* Month.m */,
+				D40584AF1CFF273200B2151D /* Deal.m */,
+				D40584AB1CFF26FB00B2151D /* Vehicle.h */,
+				D40584AC1CFF26FB00B2151D /* Vehicle.m */,
 				D40584971CFF1A0500B2151D /* AppDelegate.h */,
 				D40584981CFF1A0500B2151D /* AppDelegate.m */,
 				D405849A1CFF1A0500B2151D /* ViewController.h */,
@@ -155,9 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D405849C1CFF1A0500B2151D /* ViewController.m in Sources */,
+				D40584B01CFF273200B2151D /* Deal.m in Sources */,
 				D40584991CFF1A0500B2151D /* AppDelegate.m in Sources */,
 				D40584961CFF1A0500B2151D /* main.m in Sources */,
 				94673E4E1CFF21A000BB94DE /* RootTableViewController.m in Sources */,
+				D40584AD1CFF26FB00B2151D /* Vehicle.m in Sources */,
+				D40584B31CFF29F600B2151D /* Month.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
