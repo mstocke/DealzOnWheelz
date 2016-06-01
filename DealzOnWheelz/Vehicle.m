@@ -15,4 +15,19 @@
     NSLog(@"Deal name = %@, Deal description = %@", newDeal.dealName, newDeal.dealDescription);
 }
 
+- (id)initWithModelName:(NSString *)modelName andThumbnailImage:(UIImage *)thumbnailImage andMainImage:(UIImage *)mainImage {
+    self = [super init];
+    if (self) {
+        _modelName = modelName;
+        _thumbnailImage = thumbnailImage;
+        _mainImage = mainImage;
+        _dealsArray = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
++ (id)initWithModelName:(NSString *)modelName andThumbnailImage:(UIImage *)thumbnailImage andMainImage:(UIImage *)mainImage {
+    return [[self alloc]initWithModelName:modelName andThumbnailImage:thumbnailImage andMainImage:mainImage];
+}
+
 @end

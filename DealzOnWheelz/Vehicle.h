@@ -18,5 +18,7 @@
 @property (strong, nonatomic) NSMutableArray *dealsArray;
 
 - (void)createDeal;
+- (id)initWithModelName:(NSString *)modelName andThumbnailImage:(UIImage *)thumbnailImage andMainImage:(UIImage *)mainImage;
++ (id)initWithModelName:(NSString *)modelName andThumbnailImage:(UIImage *)thumbnailImage andMainImage:(UIImage *)mainImage;
 
 @end

@@ -1,31 +1,25 @@
 //
-//  RootTableViewController.m
+//  VehicleTableViewController.m
 //  DealzOnWheelz
 //
-//  Created by Brandon Manson on 6/1/16.
+//  Created by tstone10 on 6/1/16.
 //  Copyright © 2016 Detroit Labs. All rights reserved.
 //
 
-#import "RootTableViewController.h"
 #import "VehicleTableViewController.h"
-#import "Vehicle.h"
-#import "Deal.h"
+#import "DetailViewController.h"
 
-@interface RootTableViewController ()
-
-@property (strong, nonatomic) NSArray *months;
+@interface VehicleTableViewController ()
 
 @end
 
-@implementation RootTableViewController
+@implementation VehicleTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _months = @[@"June", @"July", @"August"];
-    
-    Deal *newDeal = [[Deal alloc]initWithDealName:@"Poopy Cash" andDescription:@"$1,000,000"];
-    NSLog(@"Deal name = %@, Deal description = %@", newDeal.dealName, newDeal.dealDescription);
+    [self createVehicleArray];
+    NSLog(@"month = %@", _month);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,6 +33,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)createVehicleArray {
+    Vehicle *mustang = [[Vehicle alloc]initWithModelName:@"Mustang" andThumbnailImage:[UIImage imageNamed:@"red_mustang_1.jpg"] andMainImage:[UIImage imageNamed:@"red_mustang_1.jpg"]];
+    Vehicle *escape = [[Vehicle alloc]initWithModelName:@"Escape" andThumbnailImage:[UIImage imageNamed:@"gold_escape_1.jpg"] andMainImage:[UIImage imageNamed:@"gold_escape_1.jpg"]];
+    Vehicle *raptor = [[Vehicle alloc]initWithModelName:@"Raptor" andThumbnailImage:[UIImage imageNamed:@"white_raptor_1.jpg"] andMainImage:[UIImage imageNamed:@"white_raptor_1.jpg"]];
+    Vehicle *gt = [[Vehicle alloc]initWithModelName:@"GT" andThumbnailImage:[UIImage imageNamed:@"blue_gt_1.jpg"] andMainImage:[UIImage imageNamed:@"blue_gt_1.jpg"]];
+    Vehicle *fiestast = [[Vehicle alloc]initWithModelName:@"Fiesta ST" andThumbnailImage:[UIImage imageNamed:@"orange_fiesta_1.jpg"] andMainImage:[UIImage imageNamed:@"orange_fiesta_1.jpg"]];
+    Vehicle *connect = [[Vehicle alloc]initWithModelName:@"Transit Connect" andThumbnailImage:[UIImage imageNamed:@"red_connect_1.jpg"] andMainImage:[UIImage imageNamed:@"red_connect_1.jpg"]];
+    
+    _vehicles = [NSArray arrayWithObjects:mustang, escape, raptor, gt, fiestast, connect, nil];
+    NSLog(@"Vehicle name = %@", mustang.modelName);
+    NSLog(@"Vehicle: %@", _vehicles[0]);
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -46,12 +53,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_months count];
+    return [_vehicles count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text = [_months objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"vehicleCell" forIndexPath:indexPath];
+    Vehicle *currentVehicle = [_vehicles objectAtIndex:indexPath.row];
+    cell.textLabel.text = currentVehicle.modelName;
+    cell.imageView.image = currentVehicle.thumbnailImage;
     
     return cell;
 }
@@ -94,10 +103,10 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    VehicleTableViewController *vc = [segue destinationViewController];
+    DetailViewController *vc = [segue destinationViewController];
     NSIndexPath *selectedRowIndex = [self.tableView indexPathForSelectedRow];
-    vc.month = [_months objectAtIndex:selectedRowIndex.row];
+    vc.month = _month;
+    vc.vehicle = [_vehicles objectAtIndex:selectedRowIndex.row];
     
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

@@ -17,6 +17,8 @@
 		D40584AD1CFF26FB00B2151D /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584AC1CFF26FB00B2151D /* Vehicle.m */; };
 		D40584B01CFF273200B2151D /* Deal.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584AF1CFF273200B2151D /* Deal.m */; };
 		D40584B31CFF29F600B2151D /* Month.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584B21CFF29F600B2151D /* Month.m */; };
+		D40584B61CFF50EF00B2151D /* VehicleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584B51CFF50EF00B2151D /* VehicleTableViewController.m */; };
+		D40584B91CFF692200B2151D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40584B81CFF692200B2151D /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		D40584AF1CFF273200B2151D /* Deal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deal.m; sourceTree = "<group>"; };
 		D40584B11CFF29F600B2151D /* Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Month.h; sourceTree = "<group>"; };
 		D40584B21CFF29F600B2151D /* Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Month.m; sourceTree = "<group>"; };
+		D40584B41CFF50EF00B2151D /* VehicleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleTableViewController.h; sourceTree = "<group>"; };
+		D40584B51CFF50EF00B2151D /* VehicleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleTableViewController.m; sourceTree = "<group>"; };
+		D40584B71CFF692200B2151D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D40584B81CFF692200B2151D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,11 @@
 				D40584981CFF1A0500B2151D /* AppDelegate.m */,
 				D405849A1CFF1A0500B2151D /* ViewController.h */,
 				94673E4C1CFF21A000BB94DE /* RootTableViewController.h */,
+				D40584B71CFF692200B2151D /* DetailViewController.h */,
+				D40584B81CFF692200B2151D /* DetailViewController.m */,
 				94673E4D1CFF21A000BB94DE /* RootTableViewController.m */,
+				D40584B41CFF50EF00B2151D /* VehicleTableViewController.h */,
+				D40584B51CFF50EF00B2151D /* VehicleTableViewController.m */,
 				D405849B1CFF1A0500B2151D /* ViewController.m */,
 				D405849D1CFF1A0500B2151D /* Main.storyboard */,
 				D40584A01CFF1A0500B2151D /* Assets.xcassets */,
@@ -171,10 +181,12 @@
 			files = (
 				D405849C1CFF1A0500B2151D /* ViewController.m in Sources */,
 				D40584B01CFF273200B2151D /* Deal.m in Sources */,
+				D40584B91CFF692200B2151D /* DetailViewController.m in Sources */,
 				D40584991CFF1A0500B2151D /* AppDelegate.m in Sources */,
 				D40584961CFF1A0500B2151D /* main.m in Sources */,
 				94673E4E1CFF21A000BB94DE /* RootTableViewController.m in Sources */,
 				D40584AD1CFF26FB00B2151D /* Vehicle.m in Sources */,
+				D40584B61CFF50EF00B2151D /* VehicleTableViewController.m in Sources */,
 				D40584B31CFF29F600B2151D /* Month.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
